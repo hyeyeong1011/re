@@ -1,0 +1,119 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i&display=swap');
+
+
+/* 공통 */
+*{margin: 0; padding: 0;}
+.blind{font-size: 0; position: absolute; left: -9999px; text-indent: -9999px;}
+.center{max-width: 1100px; margin: auto; position: relative;}
+body{font-family: 'Montserrat', sans-serif;}
+a{text-decoration: none; color: #000;}
+button{border:none; background: none; cursor: pointer; outline: none;}
+li{list-style: none;}
+input{outline: none;}
+
+
+/* 메인화면 */
+.main_wrap{
+    position:relative;
+    text-align:center;
+    width:100%;
+    height:100vh;
+    background: #f5f5f5;
+}
+.main_nav{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.main_nav a{
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin-right: -4px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.main_nav a:hover{
+    background-color: #fff;
+}
+.main_nav .about:hover .txt{
+    color: #eedcd5;
+}
+.main_nav .portfolio:hover .txt{
+    color: #c4b0ad;
+}
+.main_nav .txt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 26px;
+    color: #fff;
+}
+.main_nav .about{
+    background-color: #EEDCD5;
+}
+.main_nav .name{
+    width: 260px;
+    background-color: #fff;
+    font-family: "Inconsolata", monospace;
+}
+.main_nav .name .txt{
+    font-weight: normal;
+    color: #000;
+}
+.main_nav .portfolio{
+    background-color: #C4B0AD;
+}
+
+
+/* 버튼 애니메이션 */
+.main_nav a::before, .main_nav a::after{
+    content: '';
+    position: absolute;
+    width: 0; height: 0;
+    transition:  width 0.8s, height 0.8s;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.main_nav a::before{
+    top: 0;
+    left: 0; 
+    border: 0; 
+    border-top-width:2px; 
+    border-left-width: 2px; 
+}
+.main_nav a::after{
+    bottom: 0;
+    right: 0; 
+    border:0; 
+    border-bottom-width: 2px; 
+    border-right-width: 2px;
+}
+.main_nav .portfolio:hover::after, .main_nav .portfolio:hover::before{
+    border-style: solid;
+    border-color: #C4B0AD;
+    width: 100%;
+    height:100%;
+}
+.main_nav .about:hover::before, .main_nav .about:hover::after{
+    border-style: solid;
+    border-color: #EEDCD5;
+    width: 100%;
+    height:100%;
+}
+
+
+
+
+
+
+
+
+
