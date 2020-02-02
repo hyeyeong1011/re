@@ -6,6 +6,7 @@
 /* 공통 */
 *{margin: 0; padding: 0;}
 .blind{font-size: 0; position: absolute; left: -9999px; text-indent: -9999px;}
+.center{max-width: 1200px; margin: 0 auto; position: relative;}
 body{font-family: 'Noto Sans KR', sans-serif;}
 a{text-decoration: none; color: #000;}
 button{border:none; background: none; cursor: pointer; outline: none;}
@@ -36,9 +37,94 @@ nav ul li:nth-child(2) a, nav ul li:hover a{
 
 
 /* 어바웃 */
-.fp-tableCell{
-    padding: 0 100px 0 100px;
+/* 1페이지 */
+.hello .container{
+    overflow: hidden;
 }
+.hello h1{
+    font-size: 75px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 120px;
+    transform: translateY(10rem);
+	animation: up 0.7s linear forwards;
+}
+.hello h1 span{
+    font-weight: 900;
+    border-bottom: 2px solid;
+}
+
+@keyframes up{
+
+    100%{
+        transform: translateY(0);
+    }
+
+}
+
+.hello h2{
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+.hello h2 b{
+    font-weight: 800;
+}
+
+/* 2페이지 */
+.contents{
+    display: none;
+}
+.skills .skill-item{
+    display: inline-block;
+    width: 33.33%;
+    text-align: center;
+    font-size: 14px;
+    margin-right: -3px;
+}
+.skills .skill-item dl dt{
+    margin: 30px 0 10px;
+    font-size: 15px;
+    color: #a62f09;
+}
+.skills .skill-item dl dd{
+    font-size: 13px;
+    line-height: 25px;
+    color: #666;
+}
+.skills .skill-more{
+    margin: 100px 0 0 110px;
+}
+.skills .skill-more dl dt{
+    font-size: 20px;
+    color: #a52d07;
+    margin-bottom: 15px;
+}
+.skills .skill-more dl dd{
+    position: relative;
+    font-size: 13px;
+    color: #5f5f5f;
+    line-height: 30px;
+    padding-left: 20px;
+}
+.skills .skill-more dl dd::before{
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 5px;
+    width: 3px;
+    height: 3px;
+    background: #5f5f5f;
+}
+
+
+
+
+
+
+
 .box{
     text-align: center;
     overflow: hidden;
