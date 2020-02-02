@@ -5,6 +5,8 @@ $(function(){
         scrollHorizontally: true,
         navigation: true,
         loopBottom: true,
+        sectionsColor: ['#eedcd5', '#eedcd5', '#eedcd5', '#eedcd5', '#eedcd5'],
+        anchors: ['first', 'second', 'third', 'fourth', 'last'],
     });
 
 
