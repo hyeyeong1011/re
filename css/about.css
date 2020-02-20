@@ -6,7 +6,7 @@
 /* 공통 */
 *{margin: 0; padding: 0;}
 .blind{font-size: 0; position: absolute; left: -9999px; text-indent: -9999px;}
-.center{max-width: 1200px; margin: 0 auto; position: relative;}
+.center{max-width: 1200px; margin: 0 auto; position: relative; padding: 0 40px;}
 body{font-family: 'Noto Sans KR', sans-serif;}
 a{text-decoration: none; color: #000;}
 button{border:none; background: none; cursor: pointer; outline: none;}
@@ -32,6 +32,19 @@ nav ul li a{
 }
 nav ul li:nth-child(2) a, nav ul li:hover a{
     color: #000;
+}
+@media screen and (max-width: 980px){
+    nav ul li{
+        margin: 16px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 768px) {
+    nav{
+        display: none;
+    }
 }
 
 
@@ -63,6 +76,25 @@ nav ul li:nth-child(2) a, nav ul li:hover a{
 }
 .hello h2 b{
     font-weight: 800;
+}
+@media screen and (max-width: 980px){
+    .hello h1{
+        font-size: 60px;
+        line-height: 100px;
+    }
+    .hello h2{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .hello h1{
+        font-size: 35px;
+        line-height: 60px;
+    }
+    .hello h2{
+        font-size: 16px;
+        line-height: 34px;
+    }
 }
 
 
@@ -112,6 +144,34 @@ nav ul li:nth-child(2) a, nav ul li:hover a{
     width: 3px;
     height: 3px;
     background: #5f5f5f;
+}
+@media screen and (max-width: 980px){
+    .skills .skill-item img{
+        width: 70px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .skills .skill-item{
+        width: 100%;
+    }
+    .skills .skill-item img{
+        width: 35px;
+    }
+    .skills .skill-item dl dt{
+        margin-top: 16px;
+    }
+    .skills .skill-item dl dd, .skills .skill-more dl dd{
+        font-size: 12px;
+    }
+    .skills .skill-item dl dd:last-child{
+        margin-bottom: 20px;
+    }
+    .skills .skill-more{
+        margin: 20px 0 0 15px;
+    }
+    .skills .skill-more dl dt{
+        font-size: 16px;
+    }
 }
 
 
@@ -205,4 +265,51 @@ nav ul li:nth-child(2) a, nav ul li:hover a{
 }
 .root_daum_roughmap{
     border: none;
+}
+@media screen and (max-width: 980px){
+    .info .map #map{
+        height: 400px !important;
+    }
+    .info .contact img{
+        width: 170px;
+    }
+    .info .contact ul li{
+        font-size: 14px;
+    }
+    .info .contact ul li.name{
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+    .info .contact ul li.blog{
+        font-size: 12px;
+        margin-top: 12px;
+    }
+    .info .contact .download {
+        font-size: 13px;
+        padding: 8px 16px;
+        margin: 16px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .info .map #map{
+        height: 280px !important;
+    }
+    .info .contact img{
+        width: 130px;
+    }
+    .info .contact, .info .map{
+        float: none;
+        width: 100%;
+    }
+    .info .contact{
+        text-align: center;
+        margin-bottom: 10px;
+        padding-left: 0;
+    }
+    .info .contact ul{
+        margin-left: 0;
+    }
+    .info .contact ul li{
+        border-left: 0;
+    }
 }
