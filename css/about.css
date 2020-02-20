@@ -68,15 +68,14 @@ nav ul li:nth-child(2) a, nav ul li:hover a{
 
 
 /* 2페이지 */
-.contents{
-    display: none;
+.skills > div{
+    font-size: 0;
 }
 .skills .skill-item{
     display: inline-block;
     width: 33.33%;
     text-align: center;
     font-size: 14px;
-    margin-right: -3px;
     opacity: 0;
 }
 .skills .skill-item dl dt{
@@ -162,15 +161,20 @@ nav ul li:nth-child(2) a, nav ul li:hover a{
 }
 .info .contact ul{
     margin: 10px 0 0 20px;
+    padding-top: 10px;
     line-height: 26px;
+}
+.info .contact ul li{
+    border-left: 3px solid;
+    padding-left: 7px;
 }
 .info .contact ul li.name{
     font-size: 22px;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 17px;
 }
 .info .contact ul li.blog{
-    margin-top: 10px;
+    margin-top: 17px;
     font-size: 14px;
     font-weight: 700;
 }
