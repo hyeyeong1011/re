@@ -118,29 +118,27 @@ nav ul li:nth-child(2) a, nav ul li:hover a{
 
 
 /* 애니메이션 */
-.tilt-in-top-1{
-    animation: tilt-in-top 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+.flip-bottom-1{
+    animation: flip-in-hor-bottom 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
-.tilt-in-top-2{
-    animation: tilt-in-top 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.4s both;
+.flip-bottom-2{
+    animation: flip-in-hor-bottom 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.4s both;
 }
-.tilt-in-top-3{
-    animation: tilt-in-top 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.8s both;
+.flip-bottom-3{
+    animation: flip-in-hor-bottom 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.8s both;
 }
-.tilt-in-top-4{
-    animation: tilt-in-top 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.2s both;
+.flip-bottom-4{
+    animation: flip-in-hor-bottom 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.2s both;
 }
 
-@keyframes tilt-in-top{
+@keyframes flip-in-hor-bottom {
     0% {
-      -webkit-transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
-              transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
-      opacity: 0;
+        transform: rotateX(80deg);
+        opacity: 0;
     }
     100% {
-      -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
-              transform: rotateY(0deg) translateY(0) skewY(0deg);
-      opacity: 1;
+        transform: rotateX(0);
+        opacity: 1;
     }
 }
 
@@ -152,140 +150,55 @@ nav ul li:nth-child(2) a, nav ul li:hover a{
 
 
 
-
-.box{
-    text-align: center;
-    overflow: hidden;
-}
-.box img{
-    margin-top: 20px;
-}
-.img-box{
-    position: relative;
-    padding-bottom: 430px;
-}
-.box i{
-    position: relative;
-    top: 400px;
-    left: 100px;
-    font-size: 24px;
-    transform: rotate(-20deg);
-}
-.no-cssreflections .box i{
-    transform: rotate(0);
-}
-.box img{
-    width: 360px;
-    position: absolute;
-    left: 0;
-    top: 40px;
+/* 3페이지 */
+.info .contact img{
+    width: 250px;
     border-radius: 50%;
 }
-.box .top-wrap{
-    text-align: center;
+.info .contact{
     float: left;
-    width: 35%;
+    width: 45%;
+    padding-left: 5%;
 }
-.box img.on{
-    opacity: 0;
-    transition: opacity 1s;
-}
-img.on:hover{
-    opacity: 1;
-}
-.box .top-wrap p{
-    color: #a6a6a6;
-    padding-top: 15px;
-}
-.box .bottom-wrap{
-    text-align: right;
-    float: left;
-    width: 65%;
-    padding: 0 15px 0 50px;
-    box-sizing: border-box;
-}
-.box dl{
-    margin: 60px 0;
-}
-.box dt{
-    margin-bottom: 20px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #e6b8a7;
-}
-.box dd{
-    font-size: 14px;
-    color: #666;
+.info .contact ul{
+    margin: 10px 0 0 20px;
     line-height: 26px;
 }
-.box .motto h4{
-    font-size: 18px;
-    font-weight: bold;
-    color: #e6b8a7;
-}
-.box .motto p:first-of-type{
-    color: #a6a6a6;
-    font-size: 14px;
-    margin: 5px 0 20px;
-}
-.box .motto p:last-of-type{
-    line-height: 26px;
-    font-size: 14px;
-    color: #666;
-}
-
-.box2 .wrap img{
-    width: 180px;
-}
-.box2 .wrap .right ul{
-    border-right: 3px solid #e6b8af;
-    color: #666;
-    padding-right: 12px;
-    margin-top: 190px;
-}
-.box2 .wrap .right ul li:first-of-type{
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #000;
-}
-.box2 .wrap{
-    overflow: hidden;
-}
-.box2 .wrap .left{
-    float: left;
-    width: 80%;
-    text-align: left;
-}
- .box2 .wrap .right{
-    float: left;
-    width: 20%;
-    text-align: right;
-}
- .box2 .wrap .left dl{
-    margin-bottom: 70px;
-}
- .box2 .wrap .left dl dt{
-    font-size: 17px;
-    font-weight: bold;
+.info .contact ul li.name{
+    font-size: 22px;
+    font-weight: 700;
     margin-bottom: 10px;
 }
- .box2 .wrap .left dl dt span{
-    width: 3px;
-    background: #e6b8a7;
-    height: 18px;
+.info .contact ul li.blog{
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.info .contact ul li.phone:hover, .info .contact ul li.mail:hover{
+    text-decoration: underline;
+}
+.info .contact .download{
     display: inline-block;
-    vertical-align: sub;
-    margin-right: 5px;
-}
- .box2 .wrap .left dl dd{
-    color: #666;
-    line-height: 28px;
-}
- .box2 .wrap .left .edu{
-    margin-bottom: 15px;
-}
- .box2 .wrap .left .date{
-    font-weight: bold;
+    border: 1px solid;
     font-size: 14px;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    margin: 20px;
+}
+.info .map{
+    float: right;
+    width: 45%;
+    padding-right: 5%;
+    text-align: center;
+}
+.info .map #map{
+    display: inline-block;
+}
+.info .center::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.root_daum_roughmap{
+    border: none;
 }
